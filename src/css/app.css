@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: #333;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ol {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+td {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  padding: 0;
+  padding: 5px 10px;
+}
+
+td,
+th {
+  border: 1px solid #d9d9d9;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 3px solid #333;
+  padding-bottom: 20px;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+input[type='checkbox'] {
+  margin-left: 10px;
+}
+
+.edit-svg {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+input[type='number'],
+input[type='number']:focus,
+input[type='number']:hover {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
